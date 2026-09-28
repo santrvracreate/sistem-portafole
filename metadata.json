@@ -1,0 +1,6 @@
+{
+  "name": "NOCTUA | Beyond Digital",
+  "description": "NOCTUA — Estudio de diseño y desarrollo web de alto impacto. Interfaces ultrarrápidas y optimizadas para conversión.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

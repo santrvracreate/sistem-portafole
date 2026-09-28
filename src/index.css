@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-noctua-navy: #0F2247;
+  --color-noctua-dark: #040711;
+  --color-noctua-card-dark: #0B1328;
+  --color-noctua-slate: #3A506B;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+/* Light mode overrides on html.light */
+html.light {
+  color-scheme: light;
+  background-color: #F8FAFD;
+  color: #0F2247;
+}
+
+html.light body {
+  background-color: #F8FAFD;
+  color: #0F2247;
+}
+
+/* Dark mode overrides on html.dark */
+html.dark {
+  color-scheme: dark;
+  background-color: #040711;
+  color: #FFFFFF;
+}
+
+html.dark body {
+  background-color: #040711;
+  color: #FFFFFF;
+}
+
+@layer utilities {
+  .neon-glow-white {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.85)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+  }
+  .neon-glow-navy {
+    filter: drop-shadow(0 2px 8px rgba(15, 34, 71, 0.25));
+  }
+  .cyber-grid-dark {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .cyber-grid-light {
+    background-image: radial-gradient(rgba(15, 34, 71, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #040711;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #25334E;
+  border-radius: 4px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3A506B;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
